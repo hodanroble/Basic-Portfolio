@@ -1,59 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Hodan Roble / Contact</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Hodan Roble </title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<header>
-		<div class="container">
-			<div class="name">
-				<div class="logo">Hodan Roble</div>
-			</div>
-			<nav class="nav">
-				<ul>
-						<li><a href="#" class="active">Contact</a></li>
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-				</ul>
-			</nav>
-		</div> <!-- .container -->
-	</header>
-	
-	<div class="content">
-		<!-- Main content -->
-		<div class="main">
-			<h1 class="page-title">Contact</h1>
-			<form action="#" class="contact">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="First and Last Name">
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" placeholder="email@gmail.com">
-				<label for="name">Message</label>
-				<textarea rows="10" cols="40" name="message" id="message"></textarea>
-				<input type="submit" value="Submit">
-			</form>
-			
-		</div> <!-- .main -->
 
-		<div class="sidebar">
-			<h2 class="sidebar-title">Connect with Me</h2>
-			<ul class="media">
-				<li><a href="https://github.com/hodanroble/"><img src="./assets/images/github.png" alt="GitHub"></a></li>
-				<li><a href="https://www.linkedin.com/in/hodanroble"><img src="./assets/images/linkedin.png" alt="LinkedIn"></a></li>
-				<li><a href="https://twitter.com/hodanroble"><img src="./assets/images/twitter.png" alt="Twitter"></a></li>
-			</ul>
-		</div> <!-- .sidebar -->
-		
-	</div> <!-- .content -->
+<header>
+  <div class="wrapper">
+    <a href="#" id="logo">Hodan Roble</a>
 
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
+<div id="container" class="wrapper">
+  <div id="content" class="module">
+    <h1>Contact</h1>
+  
+    <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-	<footer>
-		&copy; Copyright 2018 Hodan Roble
-	</footer>
+  </div>
 
+  <div id="social" class="module">
+    <h2>Connect with Me</h2>
+
+    <a href="https://github.com/hodanroble"><img src="assets/images/github.png"></a>
+    <a href="https://www.linkedin.com/hodanroble/"><img src="assets/images/linkedin.png"></a>
+    <a href="http://stackoverflow.com/hodanroble"><img src="assets/images/overflow.png"></a>
+  </div>
+</div>
+  <footer> Copyright &copy; 2018 Hodan Roble </footer>
+    
 </body>
 </html>
